@@ -1,0 +1,568 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+.top-bar {
+    background-color: #0b2e59;
+    color: #fff;
+    font-size: 11px;
+    padding: 6px 0;
+}
+
+.nav-bar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sub-links a, .institutional-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 12px;
+}
+
+.sub-links a:hover, .institutional-links a:hover {
+    text-decoration: underline;
+}
+
+
+.main-header {
+    background-color: #fff;
+    padding: 15px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h2 {
+    color: #0056b3;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.logo span {
+    font-size: 10px;
+    color: #666;
+    display: block;
+    margin-top: -4px;
+}
+
+.main-nav a {
+    color: #0056b3;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    margin-left: 15px;
+}
+
+/* Campo de Busca */
+.search-section {
+    background-color: #f0f4f8;
+    padding: 10px 0;
+}
+
+.search-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.search-container input {
+    width: 300px;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+    font-size: 12px;
+}
+
+.search-container button {
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    padding: 6px 18px;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+/* Banner Principal */
+.banner-section {
+    padding: 20px 0;
+}
+
+.banner {
+    background: linear-gradient(135deg, #1b75bc, #003366);
+    color: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-content {
+    max-width: 70%;
+}
+
+.banner-content .sub-title {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.banner-content h1 {
+    font-size: 22px;
+    margin: 10px 0;
+    color: #ffca08;
+}
+
+.banner-content ul {
+    list-style: disc;
+    margin-left: 20px;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.banner-content small {
+    font-size: 10px;
+    opacity: 0.8;
+}
+
+.btn-inscreva {
+    background-color: #fff;
+    color: #003366;
+    padding: 12px 24px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.banner-dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 4px;
+}
+
+.dot.active {
+    background-color: #0056b3;
+}
+
+/* Texto de Introdução */
+.intro-section {
+    margin: 40px 0 20px;
+}
+
+.intro-section h2 {
+    color: #0056b3;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.intro-section p {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.intro-section h3 {
+    color: #0056b3;
+    font-size: 16px;
+}
+
+/* Cartões */
+.cards-section {
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.card {
+    background-color:#4EAAD3;
+    color: #fff;
+    border-radius: 12px;
+    padding: 30px 20px;
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 13px;
+    line-height: 1.4;
+    margin-bottom: 25px;
+}
+
+.card-btn {
+    background-color: #0056b3;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 30px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* Bloco Azul Inferior */
+.blue-banner {
+    background-color: #004d99;
+    color: #fff;
+    padding: 60px 0 30px;
+    margin-top: -80px;
+    height: 300px;
+    position: relative;
+    z-index: 1;
+}
+
+.blue-banner h2 {
+    padding: 10%;
+    font-size: 28px;
+    line-height: 1.2;
+}
+
+
+.bottom-banner {
+    background:#4EBDB8;
+    color: #fff;
+    padding: 40px 0;
+    display: flex;
+
+}
+
+.bottom-banner-container {
+    display: flex;
+    align-items: center;
+
+}
+
+.bottom-text h2 {
+    font-size: 20px;
+    max-width: 500px;
+    line-height: 1.3;
+}
+.story h2{
+    color:  #004d99;
+    padding: 5%;
+}
+.story img{
+    width: 100vh
+}
+.news-section {
+    position: relative;
+    padding-bottom: 50px;
+    background-color: #fff;
+}
+
+/* Fundo azul claro superior das notícias */
+.news-header-bg {
+    background-color: #55b3d9;
+    padding: 30px 0 100px;
+    color: #fff;
+}
+
+.news-header-bg h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.news-container {
+    margin-top: -80px; /* Eleva os cartões para sobrepor o fundo */
+}
+
+.news-grid {
+    display: flex;
+    gap: 15px;
+    overflow-x: hidden; /* Mantém alinhamento responsivo */
+    justify-content: space-between;
+}
+
+.news-card {
+    flex: 1;
+    min-width: 0;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.news-img img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.news-content {
+    padding: 10px 0;
+}
+
+.news-date {
+    font-size: 11px;
+    color: #0056b3;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.news-content h3 {
+    font-size: 13px;
+    color: #0056b3;
+    line-height: 1.3;
+    font-weight: 700;
+}
+
+/* Botão "Mais notícias" */
+.news-btn-wrapper {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.btn-more-news {
+    display: inline-block;
+    background-color: #55b3d9;
+    color: #fff;
+    padding: 12px 60px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-more-news:hover {
+    background-color: #3ca0c9;
+}
+
+/* ==========================================
+   SEÇÃO DE CONTACTO / ATENDIMENTO
+   ========================================== */
+.contact-section {
+    background-color: #55b3d9;
+    padding: 40px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.contact-image-wrapper {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.contact-content {
+    flex: 1.2;
+    color: #fff;
+}
+
+.contact-content h2 {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.contact-content p {
+    font-size: 13px;
+    margin-bottom: 25px;
+    opacity: 0.95;
+}
+
+.btn-contact {
+    display: inline-block;
+    background-color: #004d99;
+    color: #fff;
+    padding: 12px 45px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-contact:hover {
+    background-color: #003366;
+}
+.main-footer {
+    background-color: #0d418a;
+    color: #fff;
+    padding-top: 40px;
+    font-size: 12px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.footer-col {
+    flex: 1;
+}
+
+.footer-label {
+    font-size: 11px;
+    opacity: 0.8;
+    margin-top: 5px;
+}
+
+.phone-number {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.footer-hours {
+    font-size: 11px;
+    margin: 15px 0 10px;
+    line-height: 1.4;
+    opacity: 0.85;
+}
+
+.footer-email {
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.9;
+    transition: opacity 0.2s ease;
+}
+
+.footer-links a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    padding: 25px 0;
+}
+.org img{
+    width: 200vh;
+}
+
+.footer-bottom-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-logo h2 {
+    font-size: 26px;
+    font-weight: 800;
+}
+
+.footer-logo span {
+    font-size: 9px;
+    display: block;
+    margin-top: -3px;
+    opacity: 0.8;
+}
+
+.footer-address p {
+    font-size: 10px;
+    opacity: 0.8;
+    line-height: 1.3;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 12px;
+}
+
+.footer-socials a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #0d418a;
+    text-decoration: none;
+    font-size: 13px;
+    transition: transform 0.2s ease;
+}
+
+.footer-socials a:hover {
+    transform: translateY(-2px);
+}
